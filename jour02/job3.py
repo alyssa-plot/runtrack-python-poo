@@ -45,25 +45,19 @@ class Livre:
     
 livre1 = Livre("L'immoraliste", "André Gide", 500)
 
-# Vérification de la disponibilité
 if livre1.verification():
     print("Le livre", livre1.get_titre(), "est disponible.")
 else:
     print("Le livre", livre1.get_titre(), "n'est pas disponible.")
 
-# Emprunt du livre
 livre1.emprunter()
 
-# Vérification de la disponibilité
 if livre1.verification():
     print("Le livre", livre1.get_titre(), "est disponible.")
 else:
     print("Le livre", livre1.get_titre(), "n'est pas disponible.")
 
-# Rendu du livre
 livre1.rendre()
-
-# Vérification de la disponibilité
 if livre1.verification():
     print("Le livre", livre1.get_titre(), "est disponible.")
 else:
